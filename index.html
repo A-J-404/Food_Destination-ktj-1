@@ -1,289 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Destination</title>
-    <link rel="shortcut icon" href="Images/favicon.ico" />
-    <link rel="stylesheet" href="assign.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-  <body>
-    <header class="header" id="head-1">
-      <img class="head-img" id="logo-img" src="Images/Logo.png" alt="Img" />
-      <nav class="navbar">
-        <ul>
-          <li><a href="#">Introduction</a></li>
-          <li><a href="#spec1">Specialties</a></li>
-          <li><a href="#reco1">Our Recommendations</a></li>
-          <li><a href="#review1">Reviews</a></li>
-          <li><a href="#footer1">Footer</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="intro">
-      <div class="intro-text">
-        <h1>Food Destination</h1>
-        <h3>
-          Eat, Drink and enjoy with your family<br />Enjoy our Delicious Meal.
-        </h3>
-        <a href="#spec1">Check our Specialities</a>
-      </div>
-      <img src="Images/Cover image.jpg" alt="Cover img" />
-    </div>
-    <div class="spec" id="spec1">
-      <h3>Our Specialities</h3>
-      <div class="spec-box" id="content1">
-        <div class="spec-img">
-          <img src="Images/Shahi Paneer.jpg" alt="Shahi Paneer" />
-        </div>
-        <div class="spec-text">
-          <p>
-            <strong>Shahi Paneer</strong><br />Most favourite veg dish of
-            Indians.&nbsp;&nbsp;<span style="color: green; padding: 0 0.3em"
-              >&#9679;&#8414;</span
-            >
-          </p>
-          <p>&#8377;330</p>
-          <a href="#">Add+</a>
-        </div>
-      </div>
-      <div class="spec-box" id="content2">
-        <div class="spec-img">
-          <img src="Images/Butter Chicken.jpg" alt="Butter Chicken" />
-        </div>
-        <div class="spec-text">
-          <p>
-            <strong>Butter Chicken</strong><br />Most favourite non-veg dish of
-            Indians.&nbsp;&nbsp;<span style="color: red; padding: 0 0.3em"
-              >&#9679;&#8414;</span
-            >
-          </p>
-          <p>&#8377;400</p>
-          <a href="#">Add+</a>
-        </div>
-      </div>
-      <div class="spec-box" id="content3">
-        <div class="spec-img">
-          <img src="Images/Malai-Kofta.jpg" alt="Malai-Kofta" />
-        </div>
-        <div class="spec-text">
-          <p>
-            <strong>Malai Kofta</strong><br />Most loved veg dish of our
-            restaurant.&nbsp;&nbsp;<span style="color: green; padding: 0 0.3em"
-              >&#9679;&#8414;</span
-            >
-          </p>
-          <p>&#8377;320</p>
-          <a href="#">Add+</a>
-        </div>
-      </div>
-    </div>
-    <div class="reco" id="reco1">
-      <h3>
-        Our Recommendations
-        <div class="search-box">
-          <input type="text" placeholder="Search for a dish..." id="search-text-input" />
-          <div id="button-holder">
-            <img src="Images/search-icon.png" alt="search-icon" />
-          </div>
-        </div>
-      </h3>
 
-      <div class="reco-box" id="content-reco1">
-        <div class="reco-img">
-          <img src="Images/Veg Thali.png" alt="Veg Thali" />
-        </div>
-        <div class="reco-text">
-          <p>
-            <strong>Veg Thali</strong><br /><br />Sabji+paneer sabji+dal
-            fry+jeera rice+sweet&nbsp;&nbsp;<span
-              style="color: green; padding: 0 0.3em"
-              >&#9679;&#8414;</span
-            >
-          </p>
-          <p>&#8377;225</p>
-          <a href="#">Add+</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Destination</title>
+  <link rel="shortcut icon" href="Images/favicon.ico" />
+  <link rel="stylesheet" href="assign.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+  <header class="header" id="head-1">
+    <img class="head-img" id="logo-img" src="Images/Logo.png" alt="Img"  />
+    <nav class="navbar" id="Navbar">
+
+      <i class="fa fa-times" id="hh1" onclick="hideMenu()" aria-hidden="true"></i>
+
+      <ul>
+        <li><a href="#">Introduction</a></li>
+        <li><a href="#spec1">Specialties</a></li>
+        <li><a href="#reco1">Our Recommendations</a></li>
+        <li><a href="#review1">Reviews</a></li>
+        <li><a href="#footer1">Footer</a></li>
+      </ul>
+
+    </nav>
+
+    <i class="fa fa-bars" id="hh2" aria-hidden="true" onclick="showMenu()"></i>
+
+
+  </header>
+  <div class="intro" id="Intro">
+    <div class="intro-text">
+      <h1>Food Destination</h1>
+      <h3>
+        Eat, Drink and enjoy with your family<br />Enjoy our Delicious Meal.
+      </h3>
+      <a href="#spec1">Check our Specialities</a>
+    </div>
+    <img src="Images/Cover image.jpg" alt="Cover img" />
+  </div>
+  <div class="spec" id="spec1">
+    <h3>Our Specialities</h3>
+    <div class="spec-box" id="content1">
+      <div class="spec-img">
+        <img src="Images/Shahi Paneer.jpg" alt="Shahi Paneer" />
       </div>
-      <div class="reco-box" id="content-reco2">
-        <div class="reco-img">
-          <img src="Images/CHOLE BHATURE.png" alt="Chole Bhature" />
-        </div>
-        <div class="reco-text">
-          <p>
-            <strong>Chole Bhature</strong><br /><br />Most tasty Chole Bhature
-            of the town&nbsp;&nbsp;<span style="color: green; padding: 0 0.3em"
-              >&#9679;&#8414;</span
-            >
-          </p>
-          <p>&#8377;250</p>
-          <a href="#">Add+</a>
-        </div>
-      </div>
-      <div class="reco-box" id="content-reco3">
-        <div class="reco-img">
-          <img src="Images/Veg Kadai.jpg" alt="Veg Kadai" />
-        </div>
-        <div class="reco-text">
-          <p>
-            <strong>Veg Kadai</strong><br /><br />Tasty dish of all seasonal
-            vegetables&nbsp;&nbsp;<span style="color: green; padding: 0 0.3em"
-              >&#9679;&#8414;</span
-            >
-          </p>
-          <p>&#8377;265</p>
-          <a href="#">Add+</a>
-        </div>
-      </div>
-      <div class="reco-box" id="content-reco4">
-        <div class="reco-img">
-          <img src="Images/Egg Curry.png" alt="Egg Curry" />
-        </div>
-        <div class="reco-text">
-          <p>
-            <strong>Egg Curry</strong><br /><br />Unique Indian style curry made
-            with very few basic ingredients.&nbsp;&nbsp;<span
-              style="color: red; padding: 0 0.3em"
-              >&#9679;&#8414;</span
-            >
-          </p>
-          <p>&#8377;280</p>
-          <a href="#">Add+</a>
-        </div>
-      </div>
-      <div class="reco-box" id="content-reco5">
-        <div class="reco-img">
-          <img src="Images/Red Chicken Curry.png" alt="Red Chicken Curry" />
-        </div>
-        <div class="reco-text">
-          <p>
-            <strong>Red Chicken Curry</strong><br /><br />Most spicy Indian
-            style curry made with very few basic ingredients.&nbsp;&nbsp;<span
-              style="color: red; padding: 0 0.3em"
-              >&#9679;&#8414;</span
-            >
-          </p>
-          <p>&#8377;320</p>
-          <a href="#">Add+</a>
-        </div>
-      </div>
-      <div class="reco-box" id="content-reco6">
-        <div class="reco-img">
-          <img src="Images/Tandoori Chicken-.jpg" alt="Chicken Tandoori" />
-        </div>
-        <div class="reco-text">
-          <p>
-            <strong>Chicken Tandoori</strong><br /><br />Chicken dish prepared
-            by roasting chicken in a tandoor.&nbsp;&nbsp;<span
-              style="color: red; padding: 0 0.3em"
-              >&#9679;&#8414;</span
-            >
-          </p>
-          <p>&#8377;350</p>
-          <a href="#">Add+</a>
-        </div>
+      <div class="spec-text">
+        <p>
+          <strong>Shahi Paneer</strong><br />Most favourite veg dish of
+          Indians.&nbsp;&nbsp;<span style="color: green; padding: 0 0.3em">&#9679;&#8414;</span>
+        </p>
+        <p>&#8377;330</p>
+        <a href="#">Add+</a>
       </div>
     </div>
-    <div class="review" id="review1">
-      <h3 class="Custom-rev">Reviews</h3>
-      <div class="c-review">
-        <div class="rev-1">
-          <blockquote>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
-            cupiditate vero blanditiis accusamus repudiandae eius qui nostrum.
-            Neque perspiciatis, cum, quod nesciunt corrupti culpa, eos
-            architecto doloremque nobis dignissimos esse.
-          </blockquote>
-          <cite>
-            <img src="Images/member1.jpg" alt="Customer-1" />Sam Sharma
-          </cite>
-        </div>
-        <div class="rev-2">
-          <blockquote>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
-            cupiditate vero blanditiis accusamus repudiandae eius qui nostrum.
-            Neque perspiciatis, cum, quod nesciunt corrupti culpa, eos
-            architecto doloremque nobis dignissimos esse.
-          </blockquote>
-          <cite>
-            <img src="Images/member-2-img.jpg" alt="Customer-2" />Dolly Singh
-          </cite>
-        </div>
+    <div class="spec-box" id="content2">
+      <div class="spec-img">
+        <img src="Images/Butter Chicken.jpg" alt="Butter Chicken" />
       </div>
-      <h3 class="feedback">Your Review</h3>
-      <div class="contact-form">
-        <fieldset>
-          <input
-            placeholder="Your name"
-            type="text"
-            tabindex="1"
-            required
-            autofocus
-          />
-        </fieldset>
-        <fieldset>
-          <input
-            placeholder="Your Email Address"
-            type="email"
-            tabindex="2"
-            required
-          />
-        </fieldset>
-        <fieldset>
-          <textarea
-            placeholder="Type your Message Here...."
-            tabindex="5"
-            required
-          ></textarea>
-        </fieldset>
-        <a href="#">Submit</a>
+      <div class="spec-text">
+        <p>
+          <strong>Butter Chicken</strong><br />Most favourite non-veg dish of
+          Indians.&nbsp;&nbsp;<span style="color: red; padding: 0 0.3em">&#9679;&#8414;</span>
+        </p>
+        <p>&#8377;400</p>
+        <a href="#">Add+</a>
       </div>
     </div>
-    <div class="footer" id="footer1">
-      <div class="social">
-        <ul>
-          <li>
-            <a
-              href="https://www.twitter.com"
-              target="_blank"
-              class="fa fa-twitter"
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/"
-              class="fa fa-facebook"
-              target="_blank"
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com"
-              class="fa fa-linkedin"
-              target="_blank"
-            ></a>
-          </li>
-        </ul>
-        <div class="footer-info">
-          <p>
-            &copy; Copyright Markups. All rights reserved.<br /><br />Anushka
-            Jha
-          </p>
-        </div>
+    <div class="spec-box" id="content3">
+      <div class="spec-img">
+        <img src="Images/Malai-Kofta.jpg" alt="Malai-Kofta" />
       </div>
-      <div class="footer-nav">
-        <a href="#head-1">Back to Top</a>
+      <div class="spec-text">
+        <p>
+          <strong>Malai Kofta</strong><br />Most loved veg dish of our
+          restaurant.&nbsp;&nbsp;<span style="color: green; padding: 0 0.3em">&#9679;&#8414;</span>
+        </p>
+        <p>&#8377;320</p>
+        <a href="#">Add+</a>
       </div>
     </div>
-  </body>
+  </div>
+  <div class="reco" id="reco1">
+    <h3>
+      Our Recommendations
+      <div class="search-box">
+        <input type="text" placeholder="Search for a dish..." id="search-text-input" />
+        <div id="button-holder">
+          <img src="Images/search-icon.png" alt="search-icon" />
+        </div>
+      </div>
+    </h3>
+
+    <div class="reco-box" id="content-reco1">
+      <div class="reco-img">
+        <img src="Images/Veg Thali.png" alt="Veg Thali" />
+      </div>
+      <div class="reco-text">
+        <p>
+          <strong>Veg Thali</strong><br /><br />Sabji+paneer sabji+dal
+          fry+jeera rice+sweet&nbsp;&nbsp;<span style="color: green; padding: 0 0.3em">&#9679;&#8414;</span>
+        </p>
+        <p>&#8377;225</p>
+        <a href="#">Add+</a>
+      </div>
+    </div>
+    <div class="reco-box" id="content-reco2">
+      <div class="reco-img">
+        <img src="Images/CHOLE BHATURE.png" alt="Chole Bhature" />
+      </div>
+      <div class="reco-text">
+        <p>
+          <strong>Chole Bhature</strong><br /><br />Most tasty Chole Bhature
+          of the town&nbsp;&nbsp;<span style="color: green; padding: 0 0.3em">&#9679;&#8414;</span>
+        </p>
+        <p>&#8377;250</p>
+        <a href="#">Add+</a>
+      </div>
+    </div>
+    <div class="reco-box" id="content-reco3">
+      <div class="reco-img">
+        <img src="Images/Veg Kadai.jpg" alt="Veg Kadai" />
+      </div>
+      <div class="reco-text">
+        <p>
+          <strong>Veg Kadai</strong><br /><br />Tasty dish of all seasonal
+          vegetables&nbsp;&nbsp;<span style="color: green; padding: 0 0.3em">&#9679;&#8414;</span>
+        </p>
+        <p>&#8377;265</p>
+        <a href="#">Add+</a>
+      </div>
+    </div>
+    <div class="reco-box" id="content-reco4">
+      <div class="reco-img">
+        <img src="Images/Egg Curry.png" alt="Egg Curry" />
+      </div>
+      <div class="reco-text">
+        <p>
+          <strong>Egg Curry</strong><br /><br />Unique Indian style curry made
+          with very few basic ingredients.&nbsp;&nbsp;<span style="color: red; padding: 0 0.3em">&#9679;&#8414;</span>
+        </p>
+        <p>&#8377;280</p>
+        <a href="#">Add+</a>
+      </div>
+    </div>
+    <div class="reco-box" id="content-reco5">
+      <div class="reco-img">
+        <img src="Images/Red Chicken Curry.png" alt="Red Chicken Curry" />
+      </div>
+      <div class="reco-text">
+        <p>
+          <strong>Red Chicken Curry</strong><br /><br />Most spicy Indian
+          style curry made with very few basic ingredients.&nbsp;&nbsp;<span
+            style="color: red; padding: 0 0.3em">&#9679;&#8414;</span>
+        </p>
+        <p>&#8377;320</p>
+        <a href="#">Add+</a>
+      </div>
+    </div>
+    <div class="reco-box" id="content-reco6">
+      <div class="reco-img">
+        <img src="Images/Tandoori Chicken-.jpg" alt="Chicken Tandoori" />
+      </div>
+      <div class="reco-text">
+        <p>
+          <strong>Chicken Tandoori</strong><br /><br />Chicken dish prepared
+          by roasting chicken in a tandoor.&nbsp;&nbsp;<span style="color: red; padding: 0 0.3em">&#9679;&#8414;</span>
+        </p>
+        <p>&#8377;350</p>
+        <a href="#">Add+</a>
+      </div>
+    </div>
+  </div>
+  <div class="review" id="review1">
+    <h3 class="Custom-rev">Reviews</h3>
+    <div class="c-review">
+      <div class="rev-1">
+        <blockquote>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
+          cupiditate vero blanditiis accusamus repudiandae eius qui nostrum.
+          Neque perspiciatis, cum, quod nesciunt corrupti culpa, eos
+          architecto doloremque nobis dignissimos esse.
+        </blockquote>
+        <cite>
+          <img src="Images/member1.jpg" alt="Customer-1" />Sam Sharma
+        </cite>
+      </div>
+      <div class="rev-2">
+        <blockquote>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
+          cupiditate vero blanditiis accusamus repudiandae eius qui nostrum.
+          Neque perspiciatis, cum, quod nesciunt corrupti culpa, eos
+          architecto doloremque nobis dignissimos esse.
+        </blockquote>
+        <cite>
+          <img src="Images/member-2-img.jpg" alt="Customer-2" />Dolly Singh
+        </cite>
+      </div>
+    </div>
+    <h3 class="feedback">Your Review</h3>
+    <div class="contact-form">
+      <fieldset>
+        <input placeholder="Your name" type="text" tabindex="1" required autofocus />
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Email Address" type="email" tabindex="2" required />
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+      </fieldset>
+      <a href="#">Submit</a>
+    </div>
+  </div>
+  <div class="footer" id="footer1">
+    <div class="social">
+      <ul>
+        <li>
+          <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com" class="fa fa-linkedin" target="_blank"></a>
+        </li>
+      </ul>
+      <div class="footer-info">
+        <p>
+          &copy; Copyright Markups. All rights reserved.<br /><br />Anushka
+          Jha
+        </p>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <a href="#Intro">Back to Top</a>
+    </div>
+  </div>
+
+  <!-- JavaScript for Toggle Menu -->
+  <script>
+    var Navbar = document.getElementById("Navbar");
+
+    function showMenu() {
+      Navbar.style.right = "0";
+    }
+    function hideMenu() {
+      Navbar.style.right = "-200px";
+    }
+  </script>
+
+</body>
+
 </html>
